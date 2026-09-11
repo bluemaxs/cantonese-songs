@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>歌名｜粵語注音跟唱版</title>
+
+  <link rel="stylesheet" href="../assets/style.css">
+
+  <link rel="stylesheet" href="../assets/menu.css">
+
+  <script src="../assets/songs.js"></script>
+
+  <script src="../assets/menu.js" defer></script>
+
+</head>
+
+<body data-base="../" data-song="SLUG-要跟-songs.js-一致">
+
+  <div class="container">
+
+    <header>
+
+      <nav class="song-nav">
+
+        <a class="nav-link" href="../index.html">← 曲目</a>
+
+        <select id="songSelect" class="nav-select" aria-label="選擇歌曲">
+          <option value="">載入曲目…</option>
+        </select>
+
+      </nav>
+
+      <h1>歌名</h1>
+
+      <div class="subtitle">
+        粵語逐字注音・跟唱版
+      </div>
+
+      <div class="controls">
+
+        <button id="toggleRuby" class="control-button">
+          隱藏注音
+        </button>
+
+        <button id="toggleLarge" class="control-button">
+          大字模式
+        </button>
+
+        <button id="printPage" class="control-button">
+          列印
+        </button>
+
+      </div>
+
+    </header>
+
+    <div class="note">
+
+      <strong>使用说明</strong><br>
+
+      注音采用《粵語（香港話）教程（修訂版）》的<strong>廣州話拼音方案</strong>。<br>
+
+      「／」表示建议按照旋律或语义进行分句、换气。<br>
+
+      「大字模式」适合手机或平板跟唱。<br>
+
+      「列印」会自动切换为适合 A4 纸张的排版。
+
+    </div>
+
+    <!-- =====================================================
+     第一段
+     ===================================================== -->
+
+    <!-- =====================================================
+     歌词章节：一个 <section> 是一个段落
+
+     <div class="line"> 是一行歌词
+     <ruby>字<rt>拼音</rt></ruby> 是一个逐字注音
+     <span class="pause">／</span> 是分句换气符号
+     <hr class="divider"> 是段内的小分隔线
+     ===================================================== -->
+
+    <section>
+
+      <h2>第一段</h2>
+
+      <div class="line">
+
+        <ruby>字<rt>zi6</rt></ruby> <ruby>字<rt>zi6</rt></ruby>
+
+        <span class="pause">／</span>
+
+        <ruby>字<rt>zi6</rt></ruby>
+
+      </div>
+
+      <hr class="divider">
+
+      <div class="line">
+
+        <ruby>字<rt>zi6</rt></ruby>
+
+      </div>
+
+    </section>
+
+    <footer>
+
+      《歌名》<br>
+      粵語廣州話拼音・跟唱練習版
+
+    </footer>
+
+  </div>
+
+  <script>
+
+    /* =========================================================
+       注音显示 / 隐藏
+       ========================================================= */
+
+    const toggleRuby =
+      document.getElementById("toggleRuby");
+
+    toggleRuby.addEventListener("click", () => {
+
+      document.body.classList.toggle("hide-ruby");
+
+      if (
+        document.body.classList.contains("hide-ruby")
+      ) {
+
+        toggleRuby.textContent = "顯示注音";
+
+      } else {
+
+        toggleRuby.textContent = "隱藏注音";
+
+      }
+
+    });
+
+
+    /* =========================================================
+       大字模式
+       ========================================================= */
+
+    const toggleLarge =
+      document.getElementById("toggleLarge");
+
+    toggleLarge.addEventListener("click", () => {
+
+      document.body.classList.toggle("large-text");
+
+      if (
+        document.body.classList.contains("large-text")
+      ) {
+
+        toggleLarge.textContent = "普通字體";
+
+      } else {
+
+        toggleLarge.textContent = "大字模式";
+
+      }
+
+    });
+
+
+    /* =========================================================
+       打印
+       ========================================================= */
+
+    const printPage =
+      document.getElementById("printPage");
+
+    printPage.addEventListener("click", () => {
+
+      window.print();
+
+    });
+
+  </script>
+
+</body>
+
+</html>

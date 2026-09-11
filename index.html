@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>粵語歌跟唱練習｜曲目</title>
+
+  <link rel="stylesheet" href="assets/style.css">
+
+  <link rel="stylesheet" href="assets/menu.css">
+
+  <script src="assets/songs.js"></script>
+
+  <script src="assets/menu.js" defer></script>
+
+</head>
+
+<body data-base="">
+
+  <div class="container">
+
+    <header>
+
+      <h1>粵語歌跟唱練習</h1>
+
+      <div class="subtitle">
+        廣州話拼音逐字注音・跟唱版
+      </div>
+
+    </header>
+
+    <div class="note">
+
+      <strong>使用說明</strong><br>
+
+      點選歌曲，即可看到逐字對照的<strong>廣州話拼音</strong>。<br>
+
+      「／」表示建議按照旋律或語義進行分句、換氣。<br>
+
+      每首歌頁面都有「隱藏注音」「大字模式」「列印」。<br>
+
+      注音依據《粵語（香港話）教程（修訂版）》的廣州話拼音方案。
+
+    </div>
+
+    <div class="menu-tools">
+
+      <input
+        id="songSearch"
+        class="search-input"
+        type="search"
+        placeholder="搜尋歌名或歌手…"
+        aria-label="搜尋歌曲"
+      >
+
+      <p id="songCount" class="song-count"></p>
+
+    </div>
+
+    <ul id="songList" class="song-list"></ul>
+
+    <p id="emptyState" class="empty-state" hidden>
+      沒有符合的歌曲。
+    </p>
+
+    <noscript>
+
+      <ul class="song-list">
+
+        <li>
+          <a class="song-card" href="songs/laopai-yuehui.html">
+            <span class="song-title">老派約會之必要</span>
+            <span class="song-meta">MC 張天賦</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="song-card" href="songs/faan-deoi-mou-haau.html">
+            <span class="song-title">反對無效</span>
+            <span class="song-meta">MC 張天賦</span>
+          </a>
+        </li>
+
+      </ul>
+
+    </noscript>
+
+    <footer>
+
+      粵語廣州話拼音・跟唱練習
+
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
