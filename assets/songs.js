@@ -21,5 +21,11 @@ window.SONGS = [
     title: "反對無效",
     artist: "MC 張天賦",
     file: "songs/faan-deoi-mou-haau.html"
+  },
+  {
+    slug: "wo-bu-shi-wei-ren",
+    title: "我不是偉人",
+    artist: "陳小春",
+    file: "songs/wo-bu-shi-wei-ren.html"
   }
 ];
