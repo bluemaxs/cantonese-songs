@@ -27,5 +27,11 @@ window.SONGS = [
     title: "我不是偉人",
     artist: "陳小春",
     file: "songs/wo-bu-shi-wei-ren.html"
+  },
+  {
+    slug: "zhong-sheng-lao-you",
+    title: "終生老友",
+    artist: "朱彥安、張詩莉",
+    file: "songs/zhong-sheng-lao-you.html"
   }
 ];
